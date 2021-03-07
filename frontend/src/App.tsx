@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <code>Edit src/App.tsx and save to reload. You can try doing this... if you dare </code>
+          Edit src/App.tsx and save to reload. Coming soon...
         </p>
         <a
           className="App-link"
@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Click here to learn more
         </a>
       </header>
     </div>
