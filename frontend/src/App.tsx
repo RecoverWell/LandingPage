@@ -10,10 +10,15 @@ function App() {
         <p>
           Coming soon... 
         </p>
-       
+      </header>
+      <header className='App-header2'>
+        <p>
+          To find out more send an email to info@recoverwell.net
+        </p>
       </header>
     </div>
   );
 }
+
 
 export default App;
