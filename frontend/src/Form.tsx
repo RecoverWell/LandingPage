@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 interface IFormProps {
   /* The http path that the form will be posted to */
   action: string;
 
   /* A prop which allows content to be injected */
-  render () => React.ReactNode;
+  render: () => React.ReactNode;
 }
 
 export interface IValues {
@@ -29,7 +29,7 @@ export interface IFormState {
   submitSuccess?: boolean;
 }
 
-export class Form extends React.Component<IFormProps, IFormState> {
+export default class Form extends React.Component<IFormProps, IFormState> {
   constructor(props: IFormProps) {
     super(props);
 

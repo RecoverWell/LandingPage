@@ -21,7 +21,7 @@ export interface IFieldProps {
   value?: any;
 }
 
-export const Field: React.SFC<IFieldProps> = ({
+const Field: React.SFC<IFieldProps> = ({
   id,
   label,
   editor,
@@ -93,6 +93,8 @@ export const Field: React.SFC<IFieldProps> = ({
     </div>
   );
 };
+export default Field; 
+
 Field.defaultProps = {
   editor: "textbox"
 };
