@@ -5,7 +5,9 @@ interface IProps {}
 export const PageClipForm = (props: IProps) => {
     const styles={marginRight: '12px', paddingLeft: '8px', padding: '5px', borderRadius: '6px',border: '1px gray solid',width: '200px'}
     const emailStyle={...styles,marginRight: '0px'}
-    const reasonStyle={...emailStyle,marginTop: '10px', width: '424px', height: '28px'}
+    const reasonStyle={...emailStyle,marginTop: '10px', width: '424px', height: '28px', fontFamily: `-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif`}
     return <>
 <form style={{paddingBottom: '200px',backgroundColor: '#f5f5f5'}}
 action="https://send.pageclip.co/HT5R7aTfWuzgANm4UveWRCFqTLuOMNxY" className="pageclip-form" method="post">
@@ -16,8 +18,8 @@ action="https://send.pageclip.co/HT5R7aTfWuzgANm4UveWRCFqTLuOMNxY" className="pa
   <input style={emailStyle} 
     type="email" name="email" placeholder="Email" />
 </div>
-<input style={reasonStyle} 
-    type="text" name="reason" placeholder="What would you like to know more about?"/>
+<textarea style={reasonStyle} 
+    name="reason" placeholder="What would you like to know more about?"/>
 <div>
 
 </div>
